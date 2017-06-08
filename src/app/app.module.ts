@@ -12,7 +12,7 @@ import { MyApp } from './app.component';
 @NgModule({
   declarations: [
     MyApp
-    //HomePage   //Using lady loading we don  t need it so far
+  
   ],
   imports: [
     BrowserModule,
@@ -21,7 +21,6 @@ import { MyApp } from './app.component';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp
-  //HomePage
   ],
   providers: [
     StatusBar,
