@@ -9,11 +9,11 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class TabsPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
+tab1:string="ChatsPage";
+tab2:string="GroupsPage";
+tab3:string="ProfilePage";
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad TabsPage');
+  constructor() {
   }
 
 }

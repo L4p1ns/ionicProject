@@ -1,7 +1,8 @@
 <ion-header>
-  <ion-navbar color="primary">
+  <!--<ion-navbar color="primary">
     <ion-title>Connexion</ion-title>
-  </ion-navbar>
+  </ion-navbar>-->
+
 </ion-header>
 
 <ion-content class="background">
@@ -10,22 +11,29 @@
       Connexion
     </ion-card-header>
     <ion-card-content>
-      <ion-list no-line>
+      <ion-list no-lines>
+        <div class="spacer" style="height: 10px;" ></div>      
         <ion-item>
-          <ion-input type="email" placeholder="Email">Email</ion-input>
+          <ion-input type="email" placeholder="Email" [(ngModel)]="credentials.email" >Email</ion-input>
         </ion-item>
+        <div class="spacer" style="height: 5px;" ></div>
         <ion-item>
-          <ion-input type="password" placeholder="Mot de passe">Mot de passe</ion-input>
+          <ion-input type="password" placeholder="Mot de passe" [(ngModel)]="credentials.password" >Mot de passe</ion-input>
         </ion-item>
-        <button ion-button block outline color="light" >Connexion</button>
-        <a>Mot de passe oublié? <b>Besoin d'aide</b></a>				
-				<p>ou</p>
-				<button ion-button block color="facebook">
+        <div class="spacer" style="height: 10px;" ></div>
+        <a (click)="passwordreset()">Mot de passe oublié? <b>Besoin d'aide</b></a>
+        <div class="spacer" style="height: 10px;" ></div>
+        <button ion-button block round outline color="light" (click)="signin()">Connexion</button>
+        <div class="spacer" style="height: 10px;" ></div>
+        <p>ou</p>
+        <div class="spacer" style="height: 10px;" ></div>
+        <button ion-button clear full color="light" (click)="signup()" >Créer Compte</button>
+
+        <!--<button ion-button block color="facebook">
 					<ion-icon name="logo-facebook"></ion-icon>Connecté avec FACEBOOK
-				</button>
-            
+				</button>-->
+
       </ion-list>
     </ion-card-content>
   </ion-card>
-  <button class="bottom" ion-button clear full color="light" >Créer Compte</button>        
 </ion-content>
