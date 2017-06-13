@@ -1,14 +1,14 @@
-This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
+Project Ionic de Chat [Ionic](http://ionicframework.com/docs/) projects.
 
-## How to use this template
+## Comment Utiliser?
 
-*This template does not work on its own*. The shared files for each starter are found in the [ionic2-app-base repo](https://github.com/ionic-team/ionic2-app-base).
+*Ce project ne marche pas tout seul*. Il faut installer ionic et creer un project [ionic2-app-base repo](https://github.com/ionic-team/ionic2-app-base).
 
-To use this template, either create a new ionic project using the ionic node.js utility, or copy the files from this repository into the [Starter App Base](https://github.com/ionic-team/ionic2-app-base).
+et remplacer les fichiers télécgarger dans votre projet [Starter App Base](https://github.com/ionic-team/ionic2-app-base).
 
 ### With the Ionic CLI:
 
-Take the name after `ionic2-starter-`, and that is the name of the template to be used when using the `ionic start` command below:
+Installer  `npm install firebase angularfire2 --save`, pour pouvoir travailler avec  `Firebase et AngularFire2 comme ORM` Commande:
 
 ```bash
 $ sudo npm install -g ionic cordova
@@ -18,9 +18,14 @@ $ ionic start myBlank blank
 Then, to run it, cd into `myBlank` and run:
 
 ```bash
-$ ionic cordova platform add ios
-$ ionic cordova run ios
+$ ionic cordova platform add android
+$ ionic cordova run android
 ```
+
+```bash
+$ npm install firebase angularfire2 --save
+```
+
 
 Substitute ios for android if not on a Mac.
 
