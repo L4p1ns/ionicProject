@@ -11,15 +11,16 @@ import { AngularFireAuthModule } from 'angularfire2/auth';
 
 import { MyApp } from './app.component';
 import { AuthProvider } from '../providers/auth/auth';
+import { UserProvider } from '../providers/user/user';
 
 @NgModule({
   declarations: [
     MyApp
-  
+
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp),
+    IonicModule.forRoot(MyApp, { tabsPlacement: 'top' }),
     AngularFireModule.initializeApp(config),
     AngularFireAuthModule
   ],
@@ -30,8 +31,9 @@ import { AuthProvider } from '../providers/auth/auth';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler},
-    AuthProvider
+    { provide: ErrorHandler, useClass: IonicErrorHandler },
+    AuthProvider,
+    UserProvider
   ]
 })
-export class AppModule {}
+export class AppModule { }
