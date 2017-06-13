@@ -6,3 +6,4 @@ export var config = {
     storageBucket: "chatapp-c1a19.appspot.com",
     messagingSenderId: "639523149849"
 };
+//mettez votre propore configuration ici.
