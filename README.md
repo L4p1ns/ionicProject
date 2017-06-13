@@ -1,3 +1,4 @@
+## Optimistech
 Project Ionic de Chat [Ionic](http://ionicframework.com/docs/) projects.
 
 ## Comment Utiliser?
@@ -27,5 +28,5 @@ $ npm install firebase angularfire2 --save
 ```
 
 
-Substitute ios for android if not on a Mac.
+Je Précise qu'il faut avoir une version de Ionic CLI a jours c'est à dire 3.*.*
 
